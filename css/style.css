@@ -1,0 +1,366 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700");
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: #f7f7f7;
+
+  padding: 0 4.8rem;
+  height: 7.2rem;
+  position: relative;
+}
+.logo {
+  height: 16rem;
+}
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 4.8rem;
+  position: relative;
+}
+
+.main-nav-link {
+  border: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+  background-color: #f7f7f7;
+  outline: none;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #159895;
+  cursor: pointer;
+}
+
+.cart-icon {
+  height: 3.2rem;
+  width: 3.2rem;
+}
+
+.cart {
+  position: relative;
+}
+
+.cart::after {
+  content: "0";
+  position: absolute;
+  top: -22%;
+  right: -28%;
+  background-color: #159895;
+  border-radius: 100%;
+  font-weight: 700;
+  padding: 5px;
+  font-weight: 400;
+  color: #fff;
+}
+/*    MOBILE    */
+.btn-mobile-nav {
+  display: none;
+
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+
+.section-hero {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+
+  background-image: url("../img/1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  filter: brightness(80%);
+  transition: all 0.5s ease-in;
+}
+
+.slider-controller_btn--left {
+  position: absolute;
+  top: 45%;
+  left: 2.5rem;
+}
+
+.slider-controller_btn--right {
+  position: absolute;
+  top: 45%;
+  right: 2.5rem;
+}
+
+.slider-controller_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 100%;
+  font-size: 2rem;
+  padding: 1.5rem 2rem;
+  opacity: 0.5;
+  transition: all 0.4s;
+}
+
+.slider-controller_btn:hover {
+  background-color: #159895;
+  color: #fff;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.category-nav-list {
+  list-style: none;
+  margin-top: 2rem;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+  row-gap: 2rem;
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* align-content: center; */
+}
+
+.category-nav-btn {
+  border: none;
+  padding: 1.2rem 4rem;
+  background-color: #159895;
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 500;
+  transition: all 0.5s;
+  border-radius: 10px;
+}
+
+.category-nav-btn:hover {
+  background-color: #0e6261;
+  cursor: pointer;
+}
+
+.category-content {
+  padding: 4rem;
+  font-size: 2.2rem;
+}
+
+/*************************************/
+/*               product              */
+/*************************************/
+
+.product-card {
+  width: 28rem;
+  position: relative;
+  box-shadow: 0 2px 7px #dfdfdf;
+  margin: 50px auto;
+  background: #fafafa;
+  transition: all 0.5s;
+}
+
+.product-tumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  padding: 50px;
+  background: #f0f0f0;
+}
+
+.product-tumb img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.product-details {
+  padding: 30px;
+}
+
+.product-catagory {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ccc;
+  margin-bottom: 18px;
+}
+
+.product-details h4 a {
+  font-weight: 500;
+  display: block;
+  margin-bottom: 18px;
+  text-transform: uppercase;
+  color: #363636;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.product-details h4 a:hover {
+  color: #159895;
+}
+
+.product-details p {
+  font-size: 15px;
+  line-height: 22px;
+  margin-bottom: 18px;
+  color: #999;
+}
+
+.product-bottom-details {
+  overflow: hidden;
+  border-top: 1px solid #eee;
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.product-bottom-details div {
+  float: left;
+  width: 50%;
+}
+
+.product-price {
+  font-size: 18px;
+  color: #159895;
+  font-weight: 600;
+}
+
+.product-price small {
+  font-size: 80%;
+  font-weight: 400;
+  text-decoration: line-through;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.product-links {
+  text-align: right;
+}
+
+.product-links a:hover {
+  color: #159895;
+}
+
+.product-card:hover {
+  transform: translateY(-1.2rem);
+}
+/*************************************/
+/*               FOOTER              */
+/*************************************/
+
+.footer {
+  padding: 9.2rem 0;
+  border-top: 1.5px solid #e8f5f4;
+}
+
+.footer-heading {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 3.2rem;
+}
+.logo-col {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+.social-links {
+  list-style: none;
+  display: flex;
+  gap: 2.4rem;
+}
+.social-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+.copyright {
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  color: #767676;
+  margin-top: auto;
+}
+.contacts {
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+.address {
+  margin-bottom: 2.6rem;
+}
+
+.footer-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #767676;
+  transition: all 0.3s;
+}
+.footer-link:hover,
+.footer-link:active {
+  color: #555;
+}
+
+.section-top-selling,
+.section-about {
+  margin: 0 5.2rem 7.2rem 6.2rem;
+  box-shadow: 0 0 2px #767676;
+  overflow: hidden;
+}
+
+.top-selling_title,
+.about-title {
+  background-color: #d0eaea;
+  color: #555;
+  padding: 1.2rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.top-selling_product-desc {
+  font-size: 1.4rem;
+  margin-left: -1.8rem;
+}
+
+.top-selling_product-cart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  gap: 10px;
+  transition: all 0.2s;
+}
+
+.top-selling_product-cart:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  /* background-color: #eee; */
+}
+
+.section-about {
+  margin-top: 5rem;
+}
+.about-desc {
+  padding: 2rem;
+  font-size: 1.8rem;
+}
+
+.about-desc > h3,
+p {
+  margin-bottom: 2rem;
+}

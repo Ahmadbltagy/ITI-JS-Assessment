@@ -364,3 +364,86 @@
 p {
   margin-bottom: 2rem;
 }
+
+/***********************/
+/*      ContactUs      */
+/***********************/
+
+.contact-us {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 15rem;
+  margin: 3.2rem 0;
+}
+
+.contact-us-img {
+}
+
+.img {
+  width: 48rem;
+}
+.contact-us-form {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  width: 30vw;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.form-control {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  border-radius: 12px;
+  border: 1px solid #ecf0ef;
+  height: 35px;
+  box-shadow: 0px 0px 28px -15px rgba(0, 0, 0, 1);
+
+  padding: 2rem 0;
+}
+
+.icon {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #041e1e;
+  position: absolute;
+  left: 0.5rem;
+  z-index: 11;
+}
+
+input {
+  padding: 2rem 2.75rem;
+  position: relative;
+  border: none;
+  outline: none;
+  width: 100%;
+}
+textarea {
+  padding: 2rem;
+  border-radius: 12px;
+  border: 1px solid #ecf0ef;
+  box-shadow: 0px 0px 28px -15px rgba(0, 0, 0, 1);
+}
+.btn-submit {
+  border: none;
+  padding: 1rem;
+  font-size: 1.8rem;
+  border-radius: 12px;
+  background-color: #041e1e;
+  color: #fff;
+  font-weight: 400;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.btn-submit:hover {
+  background-color: #2ca2a0;
+}

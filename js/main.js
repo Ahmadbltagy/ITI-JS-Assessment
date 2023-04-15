@@ -16,17 +16,7 @@ fetch("../components/home.html")
     CategoriesControles();
   });
 
-let aboutSection = () => {
-  fetch("../components/about.html")
-    .then((e) => {
-      return e.text();
-    })
-    .then((e) => {
-      mainEl.innerHTML = e;
-    });
-};
-
-let homeSection = () => {
+let home = () => {
   fetch("../components/home.html")
     .then((e) => {
       return e.text();
@@ -35,5 +25,25 @@ let homeSection = () => {
       mainEl.innerHTML = e;
       sliderControls();
       CategoriesControles();
+    });
+};
+
+let aboutUs = () => {
+  fetch("../components/about-us.html")
+    .then((e) => {
+      return e.text();
+    })
+    .then((e) => {
+      mainEl.innerHTML = e;
+    });
+};
+
+let contactUs = () => {
+  fetch("../components/contact-us.html")
+    .then((e) => {
+      return e.text();
+    })
+    .then((e) => {
+      mainEl.innerHTML = e;
     });
 };

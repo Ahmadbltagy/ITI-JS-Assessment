@@ -428,6 +428,19 @@ p {
   width: 30vw;
 }
 
+.contact-us-form small {
+  color: red;
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.alert-icon {
+  width: 2rem;
+  height: 2rem;
+  font-weight: 500;
+}
+
 .form {
   display: flex;
   flex-direction: column;

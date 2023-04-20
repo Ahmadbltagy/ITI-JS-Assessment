@@ -12,6 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,500;0,700;1,700&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" type="image/png" href="./img/dots-logo.png" />
 
     <link rel="stylesheet" href="./css/general.css" />
     <link rel="stylesheet" href="./css/style.css" />
@@ -25,7 +26,7 @@
       <nav class="main-nav">
         <ul class="main-nav-list">
           <li>
-            <button class="main-nav-link" onclick="home()">Home</button>
+            <button class="main-nav-link active" onclick="home()">Home</button>
           </li>
           <li>
             <button class="main-nav-link" onclick="aboutUs()">About</button>
@@ -44,6 +45,9 @@
         <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
         <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
       </button>
+      <span class="up">
+        <ion-icon class="up_icon" name="chevron-up-circle-outline"></ion-icon>
+      </span>
     </header>
 
     <main id="main"></main>
@@ -122,7 +126,7 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
-    <script src="form-validation"></script>
+    <script src="./js/form-validation.js"></script>
     <script src="./js/categories.js"></script>
     <script src="./js/slider.js"></script>
     <script src="./js/main.js"></script>

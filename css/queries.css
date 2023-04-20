@@ -25,9 +25,9 @@
 }
 
 @media (max-width: 42em) {
-  .category-nav-list {
+  /* .category-nav-list {
     grid-template-columns: repeat(2, 1fr);
-  }
+  } */
   .grid--4-cols {
     grid-template-columns: repeat(1, 1fr);
   }

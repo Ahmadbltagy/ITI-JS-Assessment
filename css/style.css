@@ -71,8 +71,7 @@
   position: relative;
 }
 
-.cart::after {
-  content: "0";
+.product-counter {
   position: absolute;
   top: -22%;
   right: -28%;
@@ -145,8 +144,7 @@
   cursor: pointer;
 }
 
-/*===========Category BTN  ============*/
-
+/*=========== Category BTN  ============*/
 .category-nav-list {
   list-style: none;
   margin-top: 2rem;
@@ -191,7 +189,7 @@
 }
 
 /*************************************/
-/*               product  card       */
+/*        product  card               */
 /*************************************/
 
 .product-card {
@@ -288,9 +286,9 @@
 }
 
 .product-card:hover {
-  /* transform: translateY(-1.2rem); */
   transform: scale(1.05);
 }
+
 /*************************************/
 /*               FOOTER              */
 /*************************************/
@@ -389,7 +387,6 @@
 .top-selling_product-cart:hover {
   cursor: pointer;
   transform: scale(1.05);
-  /* background-color: #eee; */
 }
 
 .section-about {
@@ -496,4 +493,49 @@ textarea {
 
 .btn-submit:hover {
   background-color: #2ca2a0;
+}
+
+/**************************/
+/*      PrdDetails        */
+/*************************/
+
+.section-details {
+  padding: 2.8rem 4.8rem;
+
+  display: flex;
+  gap: 15rem;
+}
+
+.product-img {
+  align-self: center;
+  box-shadow: 0 2px 5px #dfdfdf;
+  padding: 20px;
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+.product-img:hover {
+  transform: scale(1.02);
+}
+.prd-img {
+  height: 40%;
+  width: 38rem;
+}
+
+.prodcut-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.product-title {
+  font-size: 4rem;
+}
+
+.product-description {
+  font-size: 4.2rem;
+}
+
+.product-data_price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }

@@ -36,7 +36,7 @@ function CategoriesControles() {
       <div class="product-details">
         <div>
           <span class="product-catagory">Phone</span>
-          <h4><a class="product-name" href="">${product.name}</a></h4>
+          <h4><a class="product-name" href="javascript:void(0)" onclick="productAbout('${product.id}','${product.category}')">${product.name}</a></h4>
           <p>${product.desc}</p>
         </div>
         <div class="product-bottom-details">
@@ -44,7 +44,7 @@ function CategoriesControles() {
           <div class="product-links">
             <a href=""><i class="fa fa-heart"></i></a>
             <a href=""><i class="fa fa-shopping-cart"></i></a>
-            <button class="btn">Add to cart</button>
+            <button class="btn" onclick="addToCart()">Add to cart</button>
           </div>
         </div>
       </div>
@@ -62,7 +62,7 @@ function CategoriesControles() {
       <div class="product-details">
         <div>
           <span class="product-catagory">Phone</span>
-          <h4><a class="product-name" href="">${product.name}</a></h4>
+          <h4><a class="product-name" href="javascript:void(0)" onclick="productAbout('${product.id}','${product.category}')">${product.name}</a></h4>
           <p>${product.desc}</p>
         </div>
         <div class="product-bottom-details">
@@ -70,13 +70,12 @@ function CategoriesControles() {
           <div class="product-links">
             <a href=""><i class="fa fa-heart"></i></a>
             <a href=""><i class="fa fa-shopping-cart"></i></a>
-            <button class="btn">Add to cart</button>
+            <button class="btn" onclick="addToCart()">Add to cart</button>
           </div>
         </div>
       </div>
     </div>`;
     });
-    // console.log(phones.toString());
     category.innerHTML = phones.join("");
   };
 
@@ -89,7 +88,7 @@ function CategoriesControles() {
       <div class="product-details">
         <div>
           <span class="product-catagory">Phone</span>
-          <h4><a class="product-name" href="">${product.name}</a></h4>
+          <h4><a class="product-name" href="javascript:void(0)" onclick="productAbout('${product.id}','${product.category}')">${product.name}</a></h4>
           <p>${product.desc}</p>
         </div>
         <div class="product-bottom-details">
@@ -97,7 +96,7 @@ function CategoriesControles() {
           <div class="product-links">
             <a href=""><i class="fa fa-heart"></i></a>
             <a href=""><i class="fa fa-shopping-cart"></i></a>
-            <button class="btn">Add to cart</button>
+            <button class="btn" onclick="addToCart()">Add to cart</button>
           </div>
         </div>
       </div>
@@ -115,7 +114,7 @@ function CategoriesControles() {
       <div class="product-details">
         <div>
           <span class="product-catagory">Phone</span>
-          <h4><a class="product-name" href="">${product.name}</a></h4>
+          <h4><a class="product-name" href="javascript:void(0)" onclick="productAbout('${product.id}','${product.category}')">${product.name}</a></h4>
           <p>${product.desc}</p>
         </div>
         <div class="product-bottom-details">
@@ -123,7 +122,7 @@ function CategoriesControles() {
           <div class="product-links">
             <a href=""><i class="fa fa-heart"></i></a>
             <a href=""><i class="fa fa-shopping-cart"></i></a>
-            <button class="btn">Add to cart</button>
+            <button class="btn" onclick="addToCart()">Add to cart</button>
           </div>
         </div>
       </div>
@@ -141,7 +140,7 @@ function CategoriesControles() {
       <div class="product-details">
         <div>
           <span class="product-catagory">Phone</span>
-          <h4><a class="product-name" href="">${product.name}</a></h4>
+          <h4><a class="product-name" href="javascript:void(0)" onclick="productAbout('${product.id}','${product.category}')">${product.name}</a></h4>
           <p>${product.desc}</p>
         </div>
         <div class="product-bottom-details">
@@ -149,7 +148,7 @@ function CategoriesControles() {
           <div class="product-links">
             <a href=""><i class="fa fa-heart"></i></a>
             <a href=""><i class="fa fa-shopping-cart"></i></a>
-            <button class="btn">Add to cart</button>
+            <button class="btn" onclick="addToCart()">Add to cart</button>
           </div>
         </div>
       </div>

@@ -20,7 +20,7 @@ o Slider Part must be generated using Pure JS
 # About Page
 
 - Should have a navbar
-- Section that have an information about site, products and compant
+- Section that have an information about site, products and company
 - Footer Section
 
 # Contact US Page

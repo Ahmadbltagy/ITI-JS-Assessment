@@ -22,12 +22,14 @@
   .grid--4-cols {
     grid-template-columns: repeat(2, 1fr);
   }
+  .section-details {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 @media (max-width: 42em) {
-  /* .category-nav-list {
-    grid-template-columns: repeat(2, 1fr);
-  } */
   .grid--4-cols {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -38,7 +40,6 @@
     align-items: center;
   }
   .address-col {
-    /* grid-row: 1; */
     grid-column: 2;
     grid-column: span 2;
     margin-bottom: 3.2rem;

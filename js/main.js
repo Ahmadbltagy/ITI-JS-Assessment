@@ -65,6 +65,7 @@ function addToCart() {
   productCounter.textContent = ++productAdded;
 }
 
+//About page
 function productAbout(prdId, prdCategory) {
   fetch("../components/product-details.html")
     .then((e) => e.text())
@@ -74,6 +75,7 @@ function productAbout(prdId, prdCategory) {
         .then((e) => e[prdCategory + "s"].find((e) => e.id == prdId));
 
       mainEl.innerHTML = e;
+
       let prdImg = document.querySelector(".prd-img"),
         prdName = document.querySelector(".product-title"),
         prdDesc = document.querySelector(".product-description"),
@@ -83,7 +85,6 @@ function productAbout(prdId, prdCategory) {
         prdImg.src = `./img/${prdCategory}/${e.imgUrl}`;
         prdDesc.textContent = e.desc;
         prdPrice.textContent = `$${e.price}`;
-        console.log(e);
       });
     });
 

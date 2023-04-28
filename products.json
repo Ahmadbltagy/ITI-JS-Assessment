@@ -13,7 +13,6 @@
       "name": "Google Pixel 4a",
       "price": 200,
       "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero,possimus nostrum!",
-
       "category": "phone",
       "imgUrl": "4a.jpg"
     },
@@ -22,7 +21,6 @@
       "name": "Apple iPhone 14 Pro Max",
       "price": 1200,
       "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero,possimus nostrum!",
-
       "category": "phone",
       "imgUrl": "14pro.jpg"
     },
@@ -30,9 +28,7 @@
       "id": 4,
       "name": "Samsung Galaxy S10E",
       "price": 400,
-
       "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero,possimus nostrum!",
-
       "category": "phone",
       "imgUrl": "s10.jpg"
     }

@@ -27,6 +27,7 @@ function CategoriesControles() {
       monitorData = e.monitors;
       cameraData = e.cameras;
       allData = phoneData.concat(laptopData, monitorData, cameraData);
+
       //render All product in home page
       let products = allData.map((product) => {
         return `<div class="product-card">
